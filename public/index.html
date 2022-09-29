@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>React学习</title>
+  <style>
+    html,
+    body {
+      overflow: hidden;
+      height: 100%;
+    }
+
+    #root {
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    html {
+      background-color: #eee;
+      color: #212121;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    body {
+      margin: 0;
+      font-size: .3733rem;
+      font-family: PingFangSC-Regular, Hiragino Sans GB, Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+  <script>
+    // postcss-pxtorem@5
+    // 为了rem单位准备一下
+    function px2rem() {
+      // 页面10等份
+      let clientWidth = document.documentElement.clientWidth / 10
+      document.documentElement.style.fontSize = clientWidth + 'px'
+    }
+    // window.addEventListener('resize', px2rem)
+    px2rem()
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
